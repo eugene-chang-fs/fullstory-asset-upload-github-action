@@ -1,0 +1,33 @@
+{
+  "name": "fullstory-asset-upload-github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugene-chang-fs/fullstory-asset-upload-github-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugene-chang-fs/fullstory-asset-upload-github-action/issues"
+  },
+  "homepage": "https://github.com/eugene-chang-fs/fullstory-asset-upload-github-action#readme",
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^5.1.1",
+    "glob": "^8.0.3",
+    "targz": "^1.0.1",
+    "yargs": "^17.6.2"
+  }
+}

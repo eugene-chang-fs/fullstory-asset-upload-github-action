@@ -1,0 +1,24 @@
+name: 'FullStory Asset Upload'
+description: 'Assists with FullStory asset upload with GitHub action; note that this action only works if the relative path of a file is equivalent to some defined prefix'
+inputs:
+  api-key: # api key used to upload
+    description: 'API key used to upload assets'
+    required: true
+  url-prefix:
+    description: 'URL prefix for all resources'
+    required: true
+  file-globs-json:
+    description: 'A json array of globs (e.g. **/*.css) to upload'
+    required: true
+    default: '["**/*.css"]'
+  additional-key-values:
+    description: 'A json representing additional key values to be set in the asset map; useful if you want to add variables'
+    default: '{}'
+
+outputs:
+  asset-id:
+    description: 'Asset ID that should be placed in the page'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
